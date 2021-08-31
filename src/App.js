@@ -2,46 +2,55 @@ import React, { useState } from "react";
 import "./index.css";
 
 const INITIAL_STATE = [
-  { id: 1, baslik: "Alisveris Yap", tamamlandi: false },
-  { id: 2, baslik: "Fatura ode", tamamlandi: true }
+  { id: 1, title: "Go to the Supermarket", completed: false },
+  { id: 2, title: "Pay bills",completed: true }
 ];
 
 export default function App() {
-  const [liste, setListe] = useState(INITIAL_STATE);
-  const [yeniBaslik, setYeniBaslik] = useState("");
+  const [list, setList] = useState(INITIAL_STATE);
+  const [newTitle, setNewTitle] = useState("");
 
   const addNew = (title) => {
-    setListe([...liste, { id: Date.now(), baslik: title, tamamlandi: false }]);
-    setYeniBaslik("");
+      setList([...list, { id: Date.now(), title: title, completed: false }]);
+    setNewTitle("");
   };
+    
   return (
+
     <div className="App">
-      <h1>Yapılacaklar Listesi</h1>
-      <div className="ekleme_formu">
+      <h1>ToDo Lists</h1>
+      <div className="Add_form">
         <input
-          value={yeniBaslik}
-          onChange={(e) => setYeniBaslik(e.target.value)}
-          placeholer="listeye ekle"
+          value={newTitle}
+          onChange={(e) => setNewTitle(e.target.value)}
+          placeholer="Add to List"
+        
         />
 
-        <button onClick={() => addNew(yeniBaslik)}>Ekle</button>
-      </div>
-      <div className="liste">
-        {liste.map(item => (
-          <div onClick={()=> {
-            setListe(liste.map(el =>el.id===item.id ? {...el,tamamlandi:
-            !el.tamamlandi} :el))
-             }} className={item.tamamlandi ? "yapildi" : ""}>
-               <input type="checkbox" />
-
-               {item.baslik}
-
-              
-             </div>
-        ))}
-      </div>
-      <button onClick={() => setListe(liste.filter(item=>!item.tamamlandi))} className="temizle">Sil</button>
+      <button onClick={() => addNew(newTitle)}>Add</button>
     </div>
+
+      <div className="list">
+        {list.map(item => (
+          <div onClick={()=> {
+            setList(list.map(el =>el.id===item.id ? {...el,completed: !el.completed} :el))
+           
+            }
+           } 
+             
+             className={item.completed ? "done" : ""}>
+              {item.title}
+
+      </div>
+        )
+      )
+    }
+      </div>
+
+      <button onClick={() => setList(list.filter(item=>!item.completed))} className="Refresh">Delete</button>
+
+    </div>
+
   );
 }
 

@@ -1,51 +1,53 @@
 body{
   background-color: #B2E5DC;
+
 }
 
 h1{
   color: #d37c76;
-  font-family: italic;
+  font-family: arial;
 }
 
 .App {
   width: 400px;
   margin: 0 auto;
   font-family: sans-serif;
-  text-align: center;
+  text-align: right;
+  padding: 100px;
 }
 
-.ekleme_formu input,
-.ekleme_formu button,
-.temizle {
+.Add_form input,
+.Add_form button,
+.Refresh {
   padding: 5px;
   border: 0;
   outline: 0;
   font-size: 17px;
 }
 
-.ekleme_formu input {
+.Add_form input {
   background: #e1e1e2;
 }
 
-.ekleme_formu button,
-.temizle {
-  background: rgb(117, 23, 23);
+.Add_form button,
+.Refresh {
+  background: rgb(23, 67, 117);
   color: white;
 }
 
-.liste {
+.list {
   padding: 20px 0;
 }
 
-.liste > div {
+.list > div {
   padding: 8px 0;
   border-bottom: 1px solid #ccc;
 }
 
-.liste > div:last-child {
+.list > div:last-child {
   border-bottom: 0;
 }
 
-.yapildi {
+.done {
   text-decoration: line-through;
 }
