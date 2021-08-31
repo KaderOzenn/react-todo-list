@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState ,} from "react";
+
 import "./index.css";
+
 
 const INITIAL_STATE = [
   { id: 1, title: "Go to the Supermarket", completed: false },
@@ -7,6 +9,7 @@ const INITIAL_STATE = [
 ];
 
 export default function App() {
+  
   const [list, setList] = useState(INITIAL_STATE);
   const [newTitle, setNewTitle] = useState("");
 
@@ -16,7 +19,8 @@ export default function App() {
   };
     
   return (
-
+    
+    
     <div className="App">
       <h1>ToDo Lists</h1>
       <div className="Add_form">
@@ -26,6 +30,9 @@ export default function App() {
           placeholer="Add to List"
         
         />
+        
+        
+     
 
       <button onClick={() => addNew(newTitle)}>Add</button>
     </div>

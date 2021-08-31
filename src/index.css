@@ -4,7 +4,7 @@ body{
 }
 
 h1{
-  color: #d37c76;
+  color: #d376af;
   font-family: arial;
 }
 
@@ -12,8 +12,9 @@ h1{
   width: 400px;
   margin: 0 auto;
   font-family: sans-serif;
-  text-align: right;
-  padding: 100px;
+  text-align: center;
+  padding: 200px;
+  font-size: large; 
 }
 
 .Add_form input,
@@ -51,3 +52,8 @@ h1{
 .done {
   text-decoration: line-through;
 }
+
+
+
+
+
