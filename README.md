@@ -1,6 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 In the project directory, you can run:
 
+#SCREENSHOT:
+![image](https://user-images.githubusercontent.com/72973152/145808752-8bc05c44-fcdd-4f64-9cb7-11edfec88227.png)
+
+
 ### `npm start`
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
