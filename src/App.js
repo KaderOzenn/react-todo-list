@@ -22,7 +22,7 @@ export default function App() {
     
     
     <div className="App">
-      <h1>ToDo Lists</h1>
+      <h1>To-do List</h1>
       <div className="Add_form">
         <input
           value={newTitle}
