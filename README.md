@@ -2,7 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
     #SCREENSHOT:
-![image](https://user-images.githubusercontent.com/72973152/145808752-8bc05c44-fcdd-4f64-9cb7-11edfec88227.png)
+
+![img](https://user-images.githubusercontent.com/72973152/209452695-0dce76fc-5346-460c-80d6-dcf5c3524a67.png)
 
 
 ### `npm start`
