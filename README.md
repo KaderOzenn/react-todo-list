@@ -1,7 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 In the project directory, you can run:
 
-    #SCREENSHOT:
 
 ![img](https://user-images.githubusercontent.com/72973152/209452695-0dce76fc-5346-460c-80d6-dcf5c3524a67.png)
 
